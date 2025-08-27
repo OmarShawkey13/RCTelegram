@@ -194,7 +194,6 @@ class CompiledApp {
       _727: f => finalizeWrapper(f, function(x0) { return dartInstance.exports._727(f,arguments.length,x0) }),
       _728: (x0,x1) => x0.requestAnimationFrame(x1),
       _733: (x0,x1) => x0.warn(x1),
-      _735: (x0,x1) => x0.debug(x1),
       _736: x0 => globalThis.parseFloat(x0),
       _737: () => globalThis.window,
       _738: () => globalThis.Intl,
@@ -418,16 +417,7 @@ class CompiledApp {
       _1220: x0 => x0.selectedTrack,
       _1221: x0 => x0.repetitionCount,
       _1222: x0 => x0.frameCount,
-      _1270: (x0,x1) => x0.createElement(x1),
-      _1276: (x0,x1,x2) => x0.addEventListener(x1,x2),
       _1287: (x0,x1,x2,x3) => x0.open(x1,x2,x3),
-      _1288: x0 => x0.decode(),
-      _1289: (x0,x1,x2,x3) => x0.open(x1,x2,x3),
-      _1290: (x0,x1,x2) => x0.setRequestHeader(x1,x2),
-      _1291: f => finalizeWrapper(f, function(x0) { return dartInstance.exports._1291(f,arguments.length,x0) }),
-      _1292: f => finalizeWrapper(f, function(x0) { return dartInstance.exports._1292(f,arguments.length,x0) }),
-      _1293: x0 => x0.send(),
-      _1294: () => new XMLHttpRequest(),
       _1295: Date.now,
       _1297: s => new Date(s * 1000).getTimezoneOffset() * 60,
       _1298: s => {
@@ -448,13 +438,6 @@ class CompiledApp {
       _1300: () => typeof dartUseDateNowForTicks !== "undefined",
       _1301: () => 1000 * performance.now(),
       _1302: () => Date.now(),
-      _1303: () => {
-        // On browsers return `globalThis.location.href`
-        if (globalThis.location != null) {
-          return globalThis.location.href;
-        }
-        return null;
-      },
       _1305: () => new WeakMap(),
       _1306: (map, o) => map.get(o),
       _1307: (map, o, v) => map.set(o, v),
@@ -701,17 +684,6 @@ class CompiledApp {
       _1528: Function.prototype.call.bind(BigInt.prototype.toString),
       _1529: Function.prototype.call.bind(Number.prototype.toString),
       _1530: (d, digits) => d.toFixed(digits),
-      _1534: () => globalThis.document,
-      _1540: (x0,x1) => { x0.height = x1 },
-      _1542: (x0,x1) => { x0.width = x1 },
-      _1551: x0 => x0.style,
-      _1554: x0 => x0.src,
-      _1555: (x0,x1) => { x0.src = x1 },
-      _1556: x0 => x0.naturalWidth,
-      _1557: x0 => x0.naturalHeight,
-      _1573: x0 => x0.status,
-      _1574: (x0,x1) => { x0.responseType = x1 },
-      _1576: x0 => x0.response,
       _3409: () => globalThis.window,
       _3471: x0 => x0.navigator,
       _3860: x0 => x0.userAgent,
